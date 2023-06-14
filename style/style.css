@@ -1,0 +1,154 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+  background-image: url(../images/dark-wood.jpg);
+  color: rgb(82, 82, 82);
+}
+
+header {
+  background-image: url(../images/header.jpg);
+  background-position: 50px -30px;
+  background-size: cover;
+  background-repeat: repeat;
+  height: 180px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+header h1 {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+header nav {
+  padding: 0 !important;
+}
+
+header nav {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  box-sizing: border-box;
+  background-color: lightgrey;
+  padding-left: 50rem;
+}
+
+nav ul {
+    box-sizing: border-box;
+    margin-left: 50px;
+}
+
+header nav ul li {
+  display: inline;
+  padding-inline: 2rem;
+}
+header nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding-block: 1rem;
+  color: black;
+  padding-inline: 1rem;
+}
+
+header nav ul li a:hover,
+.current {
+  color: antiquewhite;
+  background-color: darkgray;
+}
+
+/*main*/
+main {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+section.articles {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+
+  border-radius: 1rem;
+  box-shadow: 1px 1px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 550px;
+
+  align-content: space-around;
+  justify-content: start;
+  align-items: start;
+}
+
+section.articles > * {
+  padding-block: 2rem;
+}
+
+article {
+  width: 70%;
+}
+
+aside {
+  width: 25%;
+}
+figure {
+  float: left;
+  padding: 1rem;
+  border: 1px solid grey;
+  margin-right: 2rem;
+  box-shadow: 0px 1px 10px 0px;
+  border-radius: 5px;
+}
+
+h2 {
+  color: rgb(75, 75, 75);
+  margin-top: 1rem;
+}
+
+h3 {
+  color: #e48298;
+  margin-block: 0.5rem 2rem;
+}
+
+aside li {
+  margin-block: 3rem;
+  margin-left: 2rem;
+}
+
+footer {
+  padding-left: 2rem;
+}
+
+@media screen  and (max-width: 920px)  {
+    section.articles {
+        flex-wrap: wrap;
+        height: max-content;
+        align-items: start;
+        flex-direction: row;
+        
+    }
+
+    section.articles > * {
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+    section.articles article {
+        flex-basis: 51%;
+    }
+}
