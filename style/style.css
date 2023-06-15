@@ -149,5 +149,6 @@ footer {
     }
     section.articles article {
         flex-basis: 51%;
+        
     }
 }
