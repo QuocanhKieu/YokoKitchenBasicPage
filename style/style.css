@@ -18,12 +18,12 @@ body {
 
 header {
   background-image: url(../images/header.jpg);
-  background-position: 50px -30px;
   background-size: cover;
   background-repeat: repeat;
-  height: 180px;
+  height: 235px;
   position: relative;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  background-position: 100px 100%;
 }
 
 header h1 {
@@ -32,19 +32,18 @@ header h1 {
   left: -9999px;
 }
 
-header nav {
-  padding: 0 !important;
-}
 
 header nav {
   width: 100%;
   margin: auto;
   position: absolute;
-  bottom: 0%;
+  bottom: -5%;
   left: 0;
   box-sizing: border-box;
   background-color: lightgrey;
+  padding: 0 !important;
   padding-left: 50rem;
+  
 }
 
 nav ul {
