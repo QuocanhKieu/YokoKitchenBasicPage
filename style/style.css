@@ -140,7 +140,7 @@ footer {
         height: max-content;
         align-items: start;
         flex-direction: row;
-        
+        padding-inline: 1.5rem;
     }
 
     section.articles > * {
